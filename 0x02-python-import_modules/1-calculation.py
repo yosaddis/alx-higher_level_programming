@@ -4,10 +4,10 @@ import calculator_1 as cal
 a = "10"
 b = "5"
 
-add_str = a + "+" + b
-sub_str = a + "-" + b
-mul_str = a + "*" + b
-div_str = a + "/" + b
+add_str = a + " + " + b
+sub_str = a + " - " + b
+mul_str = a + " * " + b
+div_str = a + " / " + b
 
 print(add_str + " = {:d}".format(cal.add(int(a), int(b))))
 print(sub_str + " = {:d}".format(cal.sub(int(a), int(b))))
