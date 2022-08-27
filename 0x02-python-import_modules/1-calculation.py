@@ -1,10 +1,15 @@
 #!/usr/bin/python3
 import calculator_1 as cal
 
-a = 10
-b = 5
+a = "10"
+b = "5"
 
-print("{:d} + {:d} = {:d}".format(a, b, cal.add(a, b)))
-print("{:d} - {:d} = {:d}".format(a, b, cal.sub(a, b)))
-print("{:d} * {:d} = {:d}".format(a, b, cal.mul(a, b)))
-print("{:d} / {:d} = {:d}".format(a, b, cal.div(a, b)))
+add_str = a + "+" + b
+sub_str = a + "-" + b
+mul_str = a + "*" + b
+div_str = a + "/" + b
+
+print(add_str + " = {:d}".format(cal.add(int(a), int(b))))
+print(sub_str + " = {:d}".format(cal.sub(int(a), int(b))))
+print(mul_str + " = {:d}".format(cal.mul(int(a), int(b))))
+print(div_str + " = {:d}".format(cal.div(int(a), int(b))))
