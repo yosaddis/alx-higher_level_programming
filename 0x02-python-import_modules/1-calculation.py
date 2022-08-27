@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 import calculator_1 as cal
 
-a = "10"
-b = "5"
+a = 10
+b = 5
 
-add_str = a + " + " + b
-sub_str = a + " - " + b
-mul_str = a + " * " + b
-div_str = a + " / " + b
+add_str = str(a) + " + " + str(b)
+sub_str = str(a) + " - " + str(b)
+mul_str = str(a) + " * " + str(b)
+div_str = str(a) + " / " + str(b)
 
 print(add_str + " = {:d}".format(cal.add(int(a), int(b))))
 print(sub_str + " = {:d}".format(cal.sub(int(a), int(b))))
